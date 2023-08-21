@@ -1,0 +1,103 @@
+body {
+  background-color:rgb(32,42,68);
+  font-family:Arial;
+  color:white;
+}
+
+.title {
+  font-size: 50px;
+  font-weight:bold;
+  text-align:center;
+}
+
+.button-moves {
+  display:flex;
+  justify-content: center;
+}
+
+.rock-emoji, .paper-emoji, .scissors-emoji {
+  background:none;
+  border-style:solid;
+  border-width: 1px;
+  border-radius: 100px;
+  border-color: white;
+  margin-bottom: 10px;
+  margin-right: 40px;
+  cursor:pointer;
+  width: 200px;
+  height: 200px;
+}
+
+.rock-emoji {
+  margin-left: 40px;
+}
+
+
+.rock-emoji:hover, .paper-emoji:hover, .scissors-emoji:hover {
+  background-color:rgb(46, 55, 79);
+  border:none;
+}
+
+.rock-image, .paper-image, .scissors-image {
+  width: 100px;
+  height: 100px;
+  padding: 15px;
+  align-items:center;
+}
+
+.update-winner {
+  font-weight:bold;
+  text-align:center;
+  font-size: 37px;
+  margin-top:90px;
+  margin-bottom: 0px;
+}
+
+.update-move {
+  text-align:center;
+  margin-bottom: 25px;
+}
+
+.rock-image-move, .paper-image-move, .scissors-image-move {
+  width:60px;
+  margin-bottom:0px;
+}
+
+.update-scores {
+  text-align:center;
+  margin-top:0px;
+  margin-bottom:25px;
+  font-size:17px;
+}
+
+.reset-button-container {
+  height:0px;
+  position:relative;
+}
+
+.centering-reset-button {
+  margin:0;
+  position:absolute;
+  top:50%;
+  left:50%;
+  -ms-transform: translate(-50%, 50%);
+  transform: translate(-50%, 50%);
+
+}
+
+.reset-button {
+  background-color:rgb(46, 55, 79);
+  border:none;
+  padding: 20px 40px;
+  border-radius:1000px;
+  font-size:17px;
+  font-weight:bold;
+  color:white;
+  opacity: 90%;
+}
+
+.reset-button:hover {
+  background-color:white;
+  color:rgb(46, 55, 79);
+  cursor:pointer;
+}

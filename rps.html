@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Rock paper scissors game</title>
+    <link rel="stylesheet" href="rps.css">
+
+  </head>
+
+  <body>
+    
+    <p class="title">Rock Paper Scissors Game</p>
+
+    <!--buttons for player moves-->
+    <div class="button-moves">
+      <button onclick="playGame('rock')" class="rock-emoji">
+        <img class="rock-image" src="images/rock-emoji.png">
+      </button>
+  
+      <button onclick="playGame('paper')" class="paper-emoji">
+        <img class="paper-image" src="images/paper-emoji.png">
+      </button>
+  
+      <button onclick="playGame('scissors')" class="scissors-emoji">
+        <img class="scissors-image" src="images/scissors-emoji.png">
+      </button>
+    </div>
+
+
+    <!--text for winner, moves and scores-->
+    <p class="js-update-winner update-winner"></p>
+    <p class="js-update-move update-move"></p>
+
+    <p class="js-update-scores update-scores">Wins: 0, Losses: 0, Ties:0</p>
+
+    <div class="reset-button-container">
+      <div class="centering-reset-button">
+        <button onclick="
+        score.wins = 0,
+        score.losses = 0,
+        score.ties = 0,
+        updateScore();
+        " class="reset-button">Reset score</button>
+      </div>
+    </div>
+
+
+    <script src="rps.js"></script>
+  </body>
+</html>
